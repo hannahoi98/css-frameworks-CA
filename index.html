@@ -4,34 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap" 
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  
   <title>Login - Wanderly</title>
 </head>
-<body>
+<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements dark:text-darkText">
 
-    <header>
+    <header class="bg-lightHeaderFooter">
       <div>
-        <h1>Wanderly</h1>
+        <h1 class="font-display text-2xl">Wanderly</h1>
       </div>
       <div>
-        <nav>
+        <nav class="font-heading text-xl">
           <a href="#">Login</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <div>
+      <div class="font-heading text-lg text-center mt-10">
         <p>Welcome to Wanderly!</p>
         <p>Please login to your account to start sharing your adventures with other explorers</p>
       </div>
-      <div>
+      <div class="p-6 m-8 bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg">
         <form>
-          <div>
+          <div class="mb-4">
             <label for="email">E-mail</label>
             <input 
               type="email" 
               id="email" 
               name="email"
+              class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md"
               required>
           </div>
 
@@ -42,22 +53,25 @@
               id="password"
               name="password"
               minlength="8"
+              class="w-full p-2 mt-1 mb-1 border border-darkElements rounded-md shadow-md"
               required>
-            <p>Password must be at least 8 characters long</p>
+            <p class="text-xs mb-4">Password must be at least 8 characters long</p>
           </div>
 
-          <div>
+          <div class="mb-4">
             <input type="checkbox" name="register" id="register">
-            <label for="register">I don’t already have an account and want to register</label>
+            <label for="register">New here? Click to register user</label>
           </div>
 
-          <button type="submit">Login</button>
+          <div class="flex justify-center mt-8">
+            <button type="submit" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">Login</button>
+          </div>
         </form>
       </div>
     </main>
 
-    <footer>
-      <div>
+    <footer class="bg-lightHeaderFooter">
+      <div class="font-heading">
         <nav>
           <a href="#">About Wanderly</a>
           <a href="#">Terms and Conditions</a>
@@ -65,7 +79,7 @@
         </nav>
       </div>
       <div>
-        Placeholder for dark and light mode
+        <!--Placeholder for dark and light mode-->
       </div>
     </footer>
 
