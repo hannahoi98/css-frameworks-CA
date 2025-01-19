@@ -13,12 +13,13 @@
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-  
+  <script src="js/script.js" defer></script>
   <title>Login - Wanderly</title>
 </head>
-<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements dark:text-darkText min-h-screen flex flex-col">
+<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
 
-    <header class="bg-lightHeaderFooter flex justify-between items-center p-4">
+    
+    <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText flex justify-between items-center p-4">
       <div>
         <h1 class="font-display text-2xl">Wanderly</h1>
       </div>
@@ -30,7 +31,7 @@
     </header>
 
     <main>
-      <div class="font-heading text-lg text-center mt-10">
+      <div class="font-heading text-lg text-center mt-10 dark:text-darkText">
         <p>Welcome to Wanderly!</p>
         <p>Please login to your account to start sharing your adventures with other explorers</p>
       </div>
@@ -70,17 +71,21 @@
       </div>
     </main>
 
-    <footer class="bg-lightHeaderFooter mt-auto">
-      <div class="font-heading">
-        <nav class="flex flex-col  items-center py-4 space-y-4">
+    <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-auto">
+      <div class="flex justify-center items-center pt-4">
+        <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
+          Change Mode
+        </button>
+      </div>
+      
+      <div class="font-heading text-lg">
+        <nav class="flex flex-col  items-center py-4 space-y-4 dark:text-darkText">
           <a href="#">About Wanderly</a>
           <a href="#">Terms and Conditions</a>
           <a href="#">Privacy Policy</a>
         </nav>
       </div>
-      <div>
-        <!--Placeholder for dark and light mode-->
-      </div>
+      
     </footer>
 
 </body>
