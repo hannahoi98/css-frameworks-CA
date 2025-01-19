@@ -4,156 +4,210 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="/js/script.js" defer></script>
   <title>Explore - Wanderly</title>
 </head>
-<body>
-  <header>
+<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
+  <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText flex justify-between items-center p-4">
     <div>
-      <h1>Wanderly</h1>
+      <h1 class="font-display text-2xl">Wanderly</h1>
     </div>
     <div>
-      <nav>
-        <a href="#">Explore</a>
+      <nav class="font-heading text-xl">
+        <a href="#" class="italic">Explore</a>
         <a href="#">My Profile</a>
         <a href="#">Logout</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div>
-      <button>New Post</button>
+  <main class="pl-4 pr-4">
+    <div class="flex justify-center mt-8">
+      <button 
+        type="submit"
+        class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
+        New Post
+      </button>
     </div>
 
-    <div>
+    <div class="flex justify-between items-center mt-10 dark:text-darkText">
       <div>
-        <h2>Explore All Posts</h2>
+        <h2 class="font-heading text-xl">All Posts</h2>
       </div>
-      <div>
-        <!--Search-field-->
-        <p>Placeholder</p>
+      <div class="flex text-lg">
+        
+        <p>Search...</p>
         <!--Dropdown sorting-->
-        <p>Placeholder</p>
+        <p>Sort By:</p>
       </div>
     </div>
     <!--Add Underline under this element-->
 
     <!--Div for displayed posts-->
     <div>
-      
-      <div>
-        <h3>My Travel Diary</h3>
-        <img src="/assets/italy-1.jpg" alt="Colorful houses perched on a cliffside overlooking a sparkling ocean, creating a vibrant coastal scene.">
-        <p>Posted on: 10th of July</p>
-        <p>Tag: Europe </p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">My Travel Diary</h3>
+        <img 
+          class="pt-4" 
+          src="/assets/italy-1.jpg" 
+          alt="Colorful houses perched on a cliffside overlooking a sparkling ocean, creating a vibrant coastal scene."
+        >
+        <p><span class="font-bold">Posted on:</span> 10th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe </p>
         <p>Just arrived in the gorgeous Cinque Terre. Already got sore calves from all the steps</p>
       </div>
 
       
-      <div>
-        <h3>Backpacking Asia</h3>
-        <img src="/assets/bali-1.jpg" alt="Colorful directional signs pointing to different destinations, showcasing vibrant colors and playful designs.">
-        <p>Posted on: 10th of July</p>
-        <p>Tag: Asia</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        <img 
+          class="pt-4"
+          src="/assets/bali-1.jpg" 
+          alt="Colorful directional signs pointing to different destinations, showcasing vibrant colors and playful designs."
+        >
+        <p><span class="font-bold">Posted on:</span> 10th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
         <p>Soon ending our stay in Bali, where to next?</p>
       </div>
 
       
-      <div>
-        <h3>Seeking Adventures</h3>
-        <img src="/assets/newyork-1.jpg" alt="Radio City Music Hall illuminated at night, showcasing its iconic marquee and vibrant atmosphere in the heart of the city.">
-        <p>Posted on: 9th of July</p>
-        <p>Tag: North America</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        <img 
+          class="pt-4"
+          src="/assets/newyork-1.jpg" 
+          alt="Radio City Music Hall illuminated at night, showcasing its iconic marquee and vibrant atmosphere in the heart of the city.">
+        <p><span class="font-bold">Posted on:</span> 9th of July</p>
+        <p><span class="font-bold">Tag:</span> North America</p>
         <p>Loving the look of the radio city music hall at night.</p>
       </div>
 
       
-      <div>
-        <h3>Seeking Adventures</h3>
-        <img src="/assets/newyork-2.jpg" alt="The iconic Flatiron Building stands tall in New York City, showcasing its unique triangular shape against the skyline.">
-        <p>Posted on: 9th of July</p>
-        <p>Tag: North America</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        <img 
+          class="pt-4"
+          src="/assets/newyork-2.jpg" 
+          alt="The iconic Flatiron Building stands tall in New York City, showcasing its unique triangular shape against the skyline.">
+        <p><span class="font-bold">Posted on:</span> 9th of July</p>
+        <p><span class="font-bold">Tag:</span> North America</p>
         <p>Just arrived in New York after a longish flight from Iceland.</p>
       </div>
 
       
-      <div>
-        <h3>My Travel Diary</h3>
-        <img src="/assets/italy-3.jpg" alt="A serene street scene with a lamp post, framed by mountains and the ocean in the background.">
-        <p>Posted on: 8th of July</p>
-        <p>Tag: Europe</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">My Travel Diary</h3>
+        <img 
+          class="pt-4"
+          src="/assets/italy-3.jpg" 
+          alt="A serene street scene with a lamp post, framed by mountains and the ocean in the background.">
+        <p><span class="font-bold">Posted on:</span> 8th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
         <p>Don´t leave Lake Como out of your next Italy trip! So charming.</p>
       </div>
 
       
-      <div>
-        <h3>Foodie Traveler</h3>
-        <img src="/assets/food-1.jpg" alt="Two delicious tacos on a paper plate, accompanied by a fresh lemon wedge for a zesty touch.">
-        <p>Posted on: 7th of July</p>
-        <p>Tag: South America</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Foodie Traveler</h3>
+        <img 
+          class="pt-4"
+          src="/assets/food-1.jpg" 
+          alt="Two delicious tacos on a paper plate, accompanied by a fresh lemon wedge for a zesty touch.">
+        <p><span class="font-bold">Posted on:</span> 7th of July</p>
+        <p><span class="font-bold">Tag:</span> South America</p>
         <p>Been in Mexico for two days now and it´s by far the best food we´ve ever had!</p>
       </div>
 
-      <div>
-        <h3>Backpacking Asia</h3>
-        <img src="/assets/bali-2.jpg" alt="A serene temple stands in the center of a lake, bathed in the warm hues of a stunning sunset.">
-        <p>Posted on: 7th of July</p>
-        <p>Tag: Asia</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        <img 
+          class="pt-4"
+          src="/assets/bali-2.jpg" 
+          alt="A serene temple stands in the center of a lake, bathed in the warm hues of a stunning sunset.">
+        <p><span class="font-bold">Posted on:</span> 7th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
         <p>Enjoying the last couple of days in Bali. So many thing to see, think we will need to come back one day.</p>
       </div>
 
-      <div>
-        <h3>Seeking Adventures</h3>
-        <img src="/assets/iceland-2.jpg" alt="A serene blue lake surrounded by stunning Icelandic landscapes under a clear sky.">
-        <p>Posted on: 6th of July</p>
-        <p>Tag: Europe</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        <img 
+          class="pt-4"
+          src="/assets/iceland-2.jpg" 
+          alt="A serene blue lake surrounded by stunning Icelandic landscapes under a clear sky.">
+        <p><span class="font-bold">Posted on:</span> 6th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
         <p>Had to see the blue lagoon when we were in Iceland!</p>
       </div>
 
-      <div>
-        <h3>My Travel Diary</h3>
-        <img src="/assets/italy-3.jpg" alt="A gondola glides gracefully through the serene canals of Venice, surrounded by historic buildings and vibrant reflections.">
-        <p>Posted on: 5h of July</p>
-        <p>Tag: Europe</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">My Travel Diary</h3>
+        <img 
+          class="pt-4"
+          src="/assets/italy-3.jpg" 
+          alt="A gondola glides gracefully through the serene canals of Venice, surrounded by historic buildings and vibrant reflections.">
+        <p><span class="font-bold">Posted on:</span> 5h of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
         <p>Just started of our Italy trip in the incredible Venice. So excited for this adventure.</p>
       </div>
 
-      <div>
-        <h3>Seeking Adventures</h3>
-        <img src="/assets/iceland-1.jpg" alt="A stunning display of the aurora borealis lights up the night sky over Iceland's serene landscape.">
-        <p>Posted on: 5th of July</p>
-        <p>Tag: Europe</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        <img 
+          class="pt-4"
+          src="/assets/iceland-1.jpg" 
+          alt="A stunning display of the aurora borealis lights up the night sky over Iceland's serene landscape.">
+        <p><span class="font-bold">Posted on:</span> 5th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
         <p>So happy we got to experience the northern lights here in Iceland!</p>
       </div>
 
-      <div>
-        <h3>Foodie Traveler</h3>
-        <img src="/assets/food-2.jpg" alt="A delicious pizza topped with melted cheese and savory meat, ready to be enjoyed.">
-        <p>Posted on: 4th of July</p>
-        <p>Tag: Europe</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Foodie Traveler</h3>
+        <img 
+          class="pt-4"
+          src="/assets/food-2.jpg" 
+          alt="A delicious pizza topped with melted cheese and savory meat, ready to be enjoyed.">
+        <p><span class="font-bold">Posted on:</span> 4th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
         <p>Throwing it back to this amazing pizza in Naples while waiting for our South America trip.</p>
       </div>
 
-      <div>
-        <h3>Backpacking Asia</h3>
-        <img src="/assets/bali-3.jpg" alt="A serene beach in Bali, Indonesia, featuring soft sand, gentle waves, and lush palm trees under a clear blue sky.">
-        <p>Posted on: 4th of July</p>
-        <p>Tag: Asia</p>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        <img 
+          class="pt-4"
+          src="/assets/bali-3.jpg" 
+          alt="A serene beach in Bali, Indonesia, featuring soft sand, gentle waves, and lush palm trees under a clear blue sky.">
+        <p><span class="font-bold">Posted on:</span> 4th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
         <p>Without a doubt the most incredible beach I´ve ever seen!</p>
       </div>
     </div>
   </main>
 
-  <footer>
-    <div>
-      <nav>
+  <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-10">
+    <div class="flex justify-center items-center pt-4">
+      <button id="toggle-theme"
+        class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
+        Change Mode
+      </button>
+    </div>
+  
+    <div class="font-heading text-lg">
+      <nav class="flex flex-col  items-center py-4 space-y-4 dark:text-darkText">
         <a href="#">About Wanderly</a>
         <a href="#">Terms and Conditions</a>
         <a href="#">Privacy Policy</a>
       </nav>
-    </div>
-    <div>
-      Placeholder for dark and light mode
     </div>
   </footer>
 
