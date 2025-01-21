@@ -16,31 +16,30 @@
   <title>Explore - Wanderly</title>
 </head>
 <body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
-  <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText flex justify-between items-center p-4">
+  <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText dark:border-b dark:border-darkText flex justify-between items-center p-4 lg:p-8">
     <div>
-      <h1 class="font-display text-2xl">Wanderly</h1>
+      <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
     </div>
     <div>
-      <nav class="font-heading text-xl">
+      <nav class="font-heading text-xl lg:text-2xl">
         <a href="#" class="italic">Explore</a>
-        <a href="#">My Profile</a>
-        <a href="#">Logout</a>
+        <a href="#" class="lg:ml-6">My Profile</a>
+        <a href="#" class="lg:ml-6">Logout</a>
       </nav>
     </div>
   </header>
 
-  <main class="pl-4 pr-4">
-    <div class="flex justify-center mt-8">
-      <button 
-        type="submit"
-        class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
-        New Post
-      </button>
-    </div>
-
-    <div class="flex justify-between items-center mt-10 dark:text-darkText border-b border-darkElements">
+  <main class="pl-4 pr-4 lg:pl-20 lg:pr-20">
+    <div class="flex justify-between items-center mt-10 border-b border-darkElements dark:border-darkText">
       <div class="mb-2">
-        <h2 class="font-heading text-2xl">All Posts</h2>
+        <h2 class="font-heading text-2xl">
+          <div>
+            <button type="submit"
+              class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
+              New Post
+            </button>
+          </div>
+        </h2>
       </div>
       <div class="flex text-lg mb-2">
         
@@ -63,16 +62,14 @@
             <option value="Asia">Asia</option>
             <option value="Australia">Australia</option>
             <option value="Europe">Europe</option>
-            <option value="North America"></option>
-            <option value="South America"></option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
           </select>
         </form>
       </div>
     </div>
-    <!--Add Underline under this element-->
 
-    <!--Div for displayed posts-->
-    <div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
         <h3 class="font-heading text-xl">My Travel Diary</h3>
         <img 
@@ -214,7 +211,7 @@
     </div>
   </main>
 
-  <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-10">
+  <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-10 lg:mt-20 dark:border-t dark:border-darkText">
     <div class="flex justify-center items-center pt-4">
       <button id="toggle-theme"
         class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
