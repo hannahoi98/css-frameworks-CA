@@ -30,37 +30,39 @@
     </div>
   </header>
 
-  <main class="pl-4 pr-4 lg:pl-20 lg:pr-20">
-    <div>
-      <!-- Underline goes here-->
+  <main class="pl-4 pr-4 lg:pl-20 lg:pr-20">  
+    <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg mt-10 mb-10 p-4 flex flex-col md:flex-row justify-center gap-8">
       <div>
-        <!-- Profile Card-->
-        <div>
-          <div class="border-b border-darkElements dark:border-darkText">
-            <h2 class="text-xl lg:text-2xl font-heading mb-2 dark:text-darkText">My Profile</h2>
+        <img 
+          class="md:h-96 md:w-auto" 
+          src="/assets/avatar.jpg"
+          alt="Colorful houses perched on a cliffside overlooking a sparkling ocean, creating a vibrant coastal scene."
+        >
+      </div>
+
+      <div>
+        <div class="border-b border-darkElements dark:border-darkText">
+          <h2 class="text-xl lg:text-2xl font-heading mb-2 dark:text-darkText">My Travel Diary</h2>
+        </div>
+        <p class="mt-2">Currently taking a break from everyday life to experience the world.</p>
+          <div class="flex mt-8 gap-10">
+            <div class="text-center">
+              <p class="text-lg">Followed by:</p>
+              <p class="font-display text-xl">217</p>
+            </div>
+            <div class="text-center">
+              <p class="text-lg">Following:</p>
+              <p class="font-display text-xl">153</p>
+            </div>
           </div>
-          <p>An username description goes here</p>
           <div>
-            <div>
-              <p>Followed by:</p>
-              <p>217</p>
-            </div>
-          
-            <div>
-              <p>Following</p>
-              <p>153</p>
-            </div>
+            <button class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 mt-20 text-xl">Follow User</button>
           </div>
-        </div>
-        <div>
-          <button>Follow User</button>
-        </div>
       </div>
     </div>
-
     <div>
       <div class="border-b border-darkElements dark:border-darkText">
-        <h2 class="text-xl lg:text-2xl font-heading mb-2 dark:text-darkText">My Posts</h2>
+        <h2 class="text-xl lg:text-2xl font-heading mb-2 dark:text-darkText">Posts by The Travel Diary</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
