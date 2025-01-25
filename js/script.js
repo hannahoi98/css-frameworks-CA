@@ -6,3 +6,11 @@ function toggleTheme() {
 
 const themeToggle = document.querySelector("#toggle-theme");
 themeToggle.addEventListener("click", toggleTheme);
+
+// Function for mobile navigation
+const menuToggle = document.getElementById("toggle-menu");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});

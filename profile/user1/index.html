@@ -23,14 +23,25 @@
     <div>
       <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
     </div>
-    <div>
-      <nav class="font-heading text-xl lg:text-2xl">
-        <a href="#">Explore</a>
-        <a href="#" class="lg:ml-6 italic">My Profile</a>
-        <a href="#" class="lg:ml-6">Logout</a>
+    <div class="relative flex items-center">
+      <button id="toggle-menu" class="lg:hidden text-2xl">
+        ☰
+      </button>
+      <nav class="hidden lg:flex flex-row space-x-6 font-heading text-xl lg:text-2xl">
+        <a href="/feed/index.html" class="italic">Explore</a>
+        <a href="/profile/index.html">My Profile</a>
+        <a href="/index.html">Logout</a>
       </nav>
     </div>
   </header>
+  
+  <nav id="mobile-menu" class="hidden bg-lightHeaderFooter dark:bg-darkElements w-full p-4">
+    <ul class="flex flex-col items-center space-y-4 font-heading text-xl dark:text-darkText">
+      <li><a href="/feed/index.html" class="italic p-2 text-center block">Explore</a></li>
+      <li><a href="/profile/index.html" class="p-2 text-center block">My Profile</a></li>
+      <li><a href="/index.html" class="p-2 text-center block">Logout</a></li>
+    </ul>
+  </nav>
 
   <main class="pl-4 pr-4 lg:pl-20 lg:pr-20">
     <div
