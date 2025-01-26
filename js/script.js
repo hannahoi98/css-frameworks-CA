@@ -1,8 +1,34 @@
 // Function for setting dark og light theme
 function toggleTheme() {
   document.documentElement.classList.toggle("dark");
+  updateButtonText();
 }
 
+// Setting theme based on users preference
+function setInitialTheme() {
+  const prefersDarkScheme = window.matchMedia(
+    "(prefers-color-scheme: dark)",
+  ).matches;
+  if (prefersDarkScheme) {
+    document.documentElement.classList.add("dark");
+  }
+  updateButtonText();
+}
+
+//Changing button theme based on the current theme
+function updateButtonText() {
+  const button = document.querySelector("#toggle-theme");
+  if (document.documentElement.classList.contains("dark")) {
+    button.textContent = "Light Mode";
+  } else {
+    button.textContent = "Dark Mode";
+  }
+}
+
+// Setting the initial theme when page loads
+setInitialTheme();
+
+//Changing Theme when clicking button
 const themeToggle = document.querySelector("#toggle-theme");
 themeToggle.addEventListener("click", toggleTheme);
 
