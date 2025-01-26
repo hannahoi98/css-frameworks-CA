@@ -20,15 +20,22 @@ I also decided to implement:
 - New Post Page (/post/new/index.html)
 - Edit Profile Page (/profile/edit/index.html)
 
-# Technologies Used
+# Technologies Used 🚀
 - HTML5: For structuring and adding content.
 - CSS Framework: Tailwind CSS for utility-first styling and responsive design.
 - Vanilla JavaScript: Basic functionality like toggling mobile menus and changing between light and dark mode.
 
-# Development Tools
+# Development Tools 🧬
 - ESLint
 - Prettier
 - Husky
 - Node.js
 
-# How to Install
+# How to Install 🪄
+1. Clone the repository
+2. Install dependencies (Ensure you have node.js installed, then in the terminal: npm install)
+3. Set up tailwind CSS in development mode (terminal: npm run dev)
+4. Open project in VS Code (or other preferred code editor)
+5. Install Live Server in the editor if neccessary
+6. Right-click on index.html file and choose "Open with live server"
+7. Use a valid email and a 8 character password to be redirected to the profile pages and feed 
