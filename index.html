@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Log in to Wanderly and join a community of explorers. Share your adventures, discover new places, and connect with fellow travelers. It's time to start your journey!">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
       </div>
       <div>
         <nav class="font-heading italic text-xl lg:text-2xl">
-          <a href="#">Login</a>
+          <a href="/index.html">Login</a>
         </nav>
       </div>
     </header>
@@ -36,15 +36,17 @@
         <p>Please login to your account to start sharing your adventures with other explorers</p>
       </div>
       <div class="p-6 m-8 md:p-10 md:ml-28 md:mr-28 lg:ml-52 lg:mr-52 bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg">
-        <form>
+        <form id="login-form" action="/profile/index.html">
           <div class="mb-4">
             <label for="email">E-mail</label>
             <input 
               type="email" 
               id="email" 
               name="email"
-              class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md"
+              class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md focus:border-2"
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
               required>
+            <p class="text-xs hidden">Please enter a valid email-address</p>
           </div>
 
           <div>
@@ -54,9 +56,9 @@
               id="password"
               name="password"
               minlength="8"
-              class="w-full p-2 mt-1 mb-1 border border-darkElements rounded-md shadow-md"
+              class="w-full p-2 mt-1 mb-1 border border-darkElements rounded-md shadow-md focus:border-2"
               required>
-            <p class="text-xs mb-4">Password must be at least 8 characters long</p>
+            <p class="text-xs hidden">Password must contain at least 8 characters</p>
           </div>
 
           <div class="mb-4">
@@ -65,7 +67,7 @@
           </div>
 
           <div class="flex justify-center mt-8">
-            <button type="submit" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">Login</button>
+            <button id="login-link" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2">Login</button>
           </div>
         </form>
       </div>
@@ -73,16 +75,16 @@
 
     <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-auto dark:border-t dark:border-darkText">
       <div class="flex justify-center items-center pt-4">
-        <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl">
+        <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2">
           Change Mode
         </button>
       </div>
       
       <div class="font-heading text-lg">
         <nav class="flex flex-col  items-center py-4 space-y-4 dark:text-darkText">
-          <a href="#">About Wanderly</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Privacy Policy</a>
+          <a href="#" class="hover:italic">About Wanderly</a>
+          <a href="#" class="hover:italic">Terms and Conditions</a>
+          <a href="#" class="hover:italic">Privacy Policy</a>
         </nav>
       </div>
     </footer>
