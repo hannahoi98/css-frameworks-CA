@@ -12,22 +12,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="/js/script.js" defer></script>
   <title>Explore - Wanderly</title>
 </head>
+
 <body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
   <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText dark:border-b dark:border-darkText flex justify-between items-center p-4 lg:p-8">
     <div>
       <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
     </div>
     <div class="relative flex items-center">
-      <button id="toggle-menu" class="lg:hidden text-2xl">
-        ☰
-      </button>
+      <button id="toggle-menu" class="lg:hidden text-2xl">☰</button>
       <nav class="hidden lg:flex flex-row space-x-6 font-heading text-xl lg:text-2xl">
         <a href="/feed/index.html" class="italic">Explore</a>
         <a href="/profile/index.html" class="hover:italic">My Profile</a>
@@ -44,20 +41,17 @@
     </ul>
   </nav>
 
-
   <main class="pl-4 pr-4 lg:pl-20 lg:pr-20">
     <div class="flex justify-between items-center mt-10 border-b border-darkElements dark:border-darkText">
       <div class="mb-2">
         <h2 class="text-2xl">
           <div>
-            <button type="submit" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-darkText">
-              New Post
-            </button>
+            <button type="submit" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-darkText">New Post</button>
           </div>
         </h2>
       </div>
+
       <div class="flex text-lg mb-2">
-        
         <form action="#" method="get">
           <label for="search" class="hidden">Search:</label>
           <input 
@@ -67,6 +61,7 @@
             placeholder="Search..."
             class="w-24 p-1 border border-darkElements rounded-md shadow-md">
         </form>
+
         <form>
           <select 
             name="sort" 
@@ -84,35 +79,32 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">    
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user1/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">My Travel Diary</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2" 
+          src="/assets/italy-1.jpg" 
+          alt="Colorful houses perched on a cliffside overlooking a sparkling ocean, creating a vibrant coastal scene.">
+        <p><span class="font-bold">Posted on:</span> 10th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe </p>
+        <p>Just arrived in the gorgeous Cinque Terre. Already got sore calves from all the steps</p>
+      </div>
       
-        <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
-          <a href="/profile/user1/index.html" class="hover:font-semibold">
-            <h3 class="font-heading text-xl">My Travel Diary</h3>
-          </a>
-          <img 
-            class="pt-4 pb-2" 
-            src="/assets/italy-1.jpg" 
-            alt="Colorful houses perched on a cliffside overlooking a sparkling ocean, creating a vibrant coastal scene."
-          >
-          <p><span class="font-bold">Posted on:</span> 10th of July</p>
-          <p><span class="font-bold">Tag:</span> Europe </p>
-          <p>Just arrived in the gorgeous Cinque Terre. Already got sore calves from all the steps</p>
-        </div>
-      
-        <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
-          <a href="/profile/user2/index.html" class="hover:font-semibold">
-            <h3 class="font-heading text-xl">Backpacking Asia</h3>
-          </a>
-          <img 
-            class="pt-4 pb-2"
-            src="/assets/bali-1.jpg" 
-            alt="Colorful directional signs pointing to different destinations, showcasing vibrant colors and playful designs."
-          >
-          <p><span class="font-bold">Posted on:</span> 10th of July</p>
-          <p><span class="font-bold">Tag:</span> Asia</p>
-          <p>Soon ending our stay in Bali, where to next?</p>
-        </div>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user2/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/bali-1.jpg" 
+          alt="Colorful directional signs pointing to different destinations, showcasing vibrant colors and playful designs.">
+        <p><span class="font-bold">Posted on:</span> 10th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
+        <p>Soon ending our stay in Bali, where to next?</p>
+      </div>
       
       <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
         <a href="/profile/user3/index.html" class="hover:font-semibold">
@@ -127,7 +119,6 @@
         <p>Loving the look of the radio city music hall at night.</p>
       </div>
 
-      
       <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
         <a href="/profile/user3/index.html" class="hover:font-semibold">
           <h3 class="font-heading text-xl">Seeking Adventures</h3>
@@ -141,19 +132,18 @@
         <p>Just arrived in New York after a longish flight from Iceland.</p>
       </div>
 
-      
-        <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
-          <a href="/profile/user1/index.html" class="hover:font-semibold">
-            <h3 class="font-heading text-xl">My Travel Diary</h3>
-          </a>
-          <img 
-            class="pt-4 pb-2"
-            src="/assets/italy-3.jpg" 
-            alt="A serene street scene with a lamp post, framed by mountains and the ocean in the background.">
-          <p><span class="font-bold">Posted on:</span> 8th of July</p>
-          <p><span class="font-bold">Tag:</span> Europe</p>
-          <p>Don´t leave Lake Como out of your next Italy trip! So charming.</p>
-        </div>
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user1/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">My Travel Diary</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/italy-3.jpg" 
+          alt="A serene street scene with a lamp post, framed by mountains and the ocean in the background.">
+        <p><span class="font-bold">Posted on:</span> 8th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>Don´t leave Lake Como out of your next Italy trip! So charming.</p>
+      </div>
       
       <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
         <a href="/profile/user4/index.html" class="hover:font-semibold">
@@ -168,21 +158,19 @@
         <p>Been in Mexico for two days now and it´s by far the best food we´ve ever had!</p>
       </div>
 
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user2/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/bali-2.jpg" 
+          alt="A serene temple stands in the center of a lake, bathed in the warm hues of a stunning sunset.">
+        <p><span class="font-bold">Posted on:</span> 7th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
+        <p>Enjoying the last couple of days in Bali. So many thing to see, think we will need to come back one day.</p>
+      </div>
       
-        <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
-          <a href="/profile/user2/index.html" class="hover:font-semibold">
-            <h3 class="font-heading text-xl">Backpacking Asia</h3>
-          </a>
-          <img 
-            class="pt-4 pb-2"
-            src="/assets/bali-2.jpg" 
-            alt="A serene temple stands in the center of a lake, bathed in the warm hues of a stunning sunset.">
-          <p><span class="font-bold">Posted on:</span> 7th of July</p>
-          <p><span class="font-bold">Tag:</span> Asia</p>
-          <p>Enjoying the last couple of days in Bali. So many thing to see, think we will need to come back one day.</p>
-        </div>
-      
-
       <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
         <a href="/profile/user3/index.html" class="hover:font-semibold">
           <h3 class="font-heading text-xl">Seeking Adventures</h3>
@@ -196,21 +184,19 @@
         <p>Had to see the blue lagoon when we were in Iceland!</p>
       </div>
 
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user1/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">My Travel Diary</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/italy-2.jpg" 
+          alt="A gondola glides gracefully through the serene canals of Venice, surrounded by historic buildings and vibrant reflections.">
+        <p><span class="font-bold">Posted on:</span> 5h of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>Just started of our Italy trip in the incredible Venice. So excited for this adventure.</p>
+      </div>
       
-        <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
-          <a href="/profile/user1/index.html" class="hover:font-semibold">
-            <h3 class="font-heading text-xl">My Travel Diary</h3>
-          </a>
-          <img 
-            class="pt-4 pb-2"
-            src="/assets/italy-2.jpg" 
-            alt="A gondola glides gracefully through the serene canals of Venice, surrounded by historic buildings and vibrant reflections.">
-          <p><span class="font-bold">Posted on:</span> 5h of July</p>
-          <p><span class="font-bold">Tag:</span> Europe</p>
-          <p>Just started of our Italy trip in the incredible Venice. So excited for this adventure.</p>
-        </div>
-      
-
       <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
         <a href="/profile/user3/index.html" class="hover:font-semibold">
           <h3 class="font-heading text-xl">Seeking Adventures</h3>
@@ -254,9 +240,7 @@
 
   <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-10 lg:mt-20 dark:border-t dark:border-darkText">
     <div class="flex justify-center items-center pt-4">
-      <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-lightHeaderFooter">
-        Change Mode
-      </button>
+      <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-lightHeaderFooter">Change Mode</button>
     </div>
   
     <div class="font-heading text-lg">
@@ -267,6 +251,5 @@
       </nav>
     </div>
   </footer>
-
 </body>
 </html>
