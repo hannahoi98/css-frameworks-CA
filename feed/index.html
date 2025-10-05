@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover exciting posts from fellow adventurers on Wanderly. Explore new places, activities, and experiences shared by the community. Get inspired for your next adventure!">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="/js/script.js" defer></script>
+  <title>Explore - Wanderly</title>
+</head>
+
+<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
+  <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText dark:border-b dark:border-darkText flex justify-between items-center p-4 lg:p-8">
+    <div>
+      <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
+    </div>
+    <div class="relative flex items-center">
+      <button id="toggle-menu" class="lg:hidden text-2xl">☰</button>
+      <nav class="hidden lg:flex flex-row space-x-6 font-heading text-xl lg:text-2xl">
+        <a href="/feed/index.html" class="italic">Explore</a>
+        <a href="/profile/index.html" class="hover:italic">My Profile</a>
+        <a href="/index.html" class="hover:italic">Logout</a>
+      </nav>
+    </div>
+  </header>
+  
+  <nav id="mobile-menu" class="hidden bg-lightHeaderFooter dark:bg-darkElements w-full p-4">
+    <ul class="flex flex-col items-center space-y-4 font-heading text-xl dark:text-darkText">
+      <li><a href="/feed/index.html" class="italic p-2 text-center block">Explore</a></li>
+      <li><a href="/profile/index.html" class="p-2 text-center block">My Profile</a></li>
+      <li><a href="/index.html" class="p-2 text-center block">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="pl-4 pr-4 lg:pl-20 lg:pr-20">
+    <div class="flex flex-wrap justify-between items-center mt-10 border-b border-darkElements dark:border-darkText">
+      <div class="mb-2">
+        <h2 class="text-2xl">
+          <div>
+            <a href="/post/new/index.html" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-darkText">New Post</a>
+          </div>
+        </h2>
+      </div>
+
+      <div class="flex text-lg mb-2">
+        <form action="#" method="get">
+          <label for="search" class="hidden">Search:</label>
+          <input 
+            type="search" 
+            name="search" 
+            id="search"
+            placeholder="Search..."
+            class="w-24 p-1 border border-darkElements rounded-md shadow-md">
+        </form>
+
+        <form>
+          <select 
+            name="sort" 
+            id="sort"
+            class="w-24 p-1.5 ml-2 border border-darkElements rounded-md shadow-md">
+            <option value="#" selected disabled>Sort By</option>
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Australia">Australia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">    
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user1/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">My Travel Diary</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2" 
+          src="/assets/italy-1.jpg" 
+          alt="Colorful houses perched on a cliffside overlooking a sparkling ocean, creating a vibrant coastal scene.">
+        <p><span class="font-bold">Posted on:</span> 10th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe </p>
+        <p>Just arrived in the gorgeous Cinque Terre. Already got sore calves from all the steps</p>
+      </div>
+      
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user2/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/bali-1.jpg" 
+          alt="Colorful directional signs pointing to different destinations, showcasing vibrant colors and playful designs.">
+        <p><span class="font-bold">Posted on:</span> 10th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
+        <p>Soon ending our stay in Bali, where to next?</p>
+      </div>
+      
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user3/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/newyork-1.jpg" 
+          alt="Radio City Music Hall illuminated at night, showcasing its iconic marquee and vibrant atmosphere in the heart of the city.">
+        <p><span class="font-bold">Posted on:</span> 9th of July</p>
+        <p><span class="font-bold">Tag:</span> North America</p>
+        <p>Loving the look of the radio city music hall at night.</p>
+      </div>
+
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user3/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/newyork-2.jpg" 
+          alt="The iconic Flatiron Building stands tall in New York City, showcasing its unique triangular shape against the skyline.">
+        <p><span class="font-bold">Posted on:</span> 9th of July</p>
+        <p><span class="font-bold">Tag:</span> North America</p>
+        <p>Just arrived in New York after a longish flight from Iceland.</p>
+      </div>
+
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user1/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">My Travel Diary</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/italy-3.jpg" 
+          alt="A serene street scene with a lamp post, framed by mountains and the ocean in the background.">
+        <p><span class="font-bold">Posted on:</span> 8th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>Don´t leave Lake Como out of your next Italy trip! So charming.</p>
+      </div>
+      
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user4/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Foodie Traveler</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/food-1.jpg" 
+          alt="Two delicious tacos on a paper plate, accompanied by a fresh lemon wedge for a zesty touch.">
+        <p><span class="font-bold">Posted on:</span> 7th of July</p>
+        <p><span class="font-bold">Tag:</span> South America</p>
+        <p>Been in Mexico for two days now and it´s by far the best food we´ve ever had!</p>
+      </div>
+
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user2/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/bali-2.jpg" 
+          alt="A serene temple stands in the center of a lake, bathed in the warm hues of a stunning sunset.">
+        <p><span class="font-bold">Posted on:</span> 7th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
+        <p>Enjoying the last couple of days in Bali. So many thing to see, think we will need to come back one day.</p>
+      </div>
+      
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user3/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/iceland-2.jpg" 
+          alt="A serene blue lake surrounded by stunning Icelandic landscapes under a clear sky.">
+        <p><span class="font-bold">Posted on:</span> 6th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>Had to see the blue lagoon when we were in Iceland!</p>
+      </div>
+
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user1/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">My Travel Diary</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/italy-2.jpg" 
+          alt="A gondola glides gracefully through the serene canals of Venice, surrounded by historic buildings and vibrant reflections.">
+        <p><span class="font-bold">Posted on:</span> 5h of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>Just started of our Italy trip in the incredible Venice. So excited for this adventure.</p>
+      </div>
+      
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user3/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Seeking Adventures</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/iceland-1.jpg" 
+          alt="A stunning display of the aurora borealis lights up the night sky over Iceland's serene landscape.">
+        <p><span class="font-bold">Posted on:</span> 5th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>So happy we got to experience the northern lights here in Iceland!</p>
+      </div>
+
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user4/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Foodie Traveler</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/food-2.jpg" 
+          alt="A delicious pizza topped with melted cheese and savory meat, ready to be enjoyed.">
+        <p><span class="font-bold">Posted on:</span> 4th of July</p>
+        <p><span class="font-bold">Tag:</span> Europe</p>
+        <p>Throwing it back to this amazing pizza in Naples while waiting for our South America trip.</p>
+      </div>
+
+      <div class="bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg p-4 mt-8">
+        <a href="/profile/user2/index.html" class="hover:font-semibold">
+          <h3 class="font-heading text-xl">Backpacking Asia</h3>
+        </a>
+        <img 
+          class="pt-4 pb-2"
+          src="/assets/bali-3.jpg" 
+          alt="A serene beach in Bali, Indonesia, featuring soft sand, gentle waves, and lush palm trees under a clear blue sky.">
+        <p><span class="font-bold">Posted on:</span> 4th of July</p>
+        <p><span class="font-bold">Tag:</span> Asia</p>
+        <p>Without a doubt the most incredible beach I´ve ever seen!</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-10 lg:mt-20 dark:border-t dark:border-darkText">
+    <div class="flex justify-center items-center pt-4">
+      <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-lightHeaderFooter">Change Mode</button>
+    </div>
+  
+    <div class="font-heading text-lg">
+      <nav class="flex flex-col  items-center py-4 space-y-4 dark:text-darkText">
+        <a href="#" class="hover:italic">About Wanderly</a>
+        <a href="#" class="hover:italic">Terms and Conditions</a>
+        <a href="#" class="hover:italic">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

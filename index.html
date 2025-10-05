@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to Wanderly and join a community of explorers. Share your adventures, discover new places, and connect with fellow travelers. It's time to start your journey!">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+  <title>Login - Wanderly</title>
+</head>
+
+<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
+  <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText dark:border-b dark:border-darkText flex justify-between items-center p-4">
+    <div>
+      <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
+    </div>
+    <div>
+      <nav class="font-heading italic text-xl lg:text-2xl">
+        <a href="/index.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="font-heading text-lg lg:text-xl text-center mt-10 dark:text-darkText">
+      <p>Welcome to Wanderly!</p>
+      <p>Please login to your account to start sharing your adventures with other explorers</p>
+    </div>
+    <div class="p-6 m-8 md:p-10 md:ml-28 md:mr-28 lg:ml-52 lg:mr-52 bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg">
+      <form id="login-form" action="/profile/index.html">
+        <div class="mb-4">
+          <label for="email">E-mail</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email"
+            class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md focus:border-2"
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+            required>
+          <p class="text-xs hidden">Please enter a valid email-address</p>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input 
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            class="w-full p-2 mt-1 mb-1 border border-darkElements rounded-md shadow-md focus:border-2"
+            required>
+          <p class="text-xs hidden">Password must contain at least 8 characters</p>
+        </div>
+
+        <div class="mb-4">
+          <input type="checkbox" name="register" id="register">
+          <label for="register">New here? Click to register user</label>
+        </div>
+
+        <div class="flex justify-center mt-8">
+          <button id="login-link" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2">Login</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-auto dark:border-t dark:border-darkText">
+    <div class="flex justify-center items-center pt-4">
+      <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-lightHeaderFooter"> Change Mode </button>
+    </div>
+  
+    <div class="font-heading text-lg">
+      <nav class="flex flex-col  items-center py-4 space-y-4 dark:text-darkText">
+        <a href="#" class="hover:italic">About Wanderly</a>
+        <a href="#" class="hover:italic">Terms and Conditions</a>
+        <a href="#" class="hover:italic">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
