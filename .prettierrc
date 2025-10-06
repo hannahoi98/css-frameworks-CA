@@ -1,5 +1,7 @@
 {
-	"semi": true,
-	"singleQuote": false,
-  "tabWidth": 2
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "htmlWhitespaceSensitivity": "css",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
