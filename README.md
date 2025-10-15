@@ -25,7 +25,7 @@ Wanderly is a small social media UI prototype for travelers. The project’s pur
 - ESLint, Prettier, Husky (Development tools)
 
 ## Getting Started  🪄
-#Prerequisites
+Prerequisites
 - Node.js
 - A static server (ex. Live server extension in VS Code)
 
