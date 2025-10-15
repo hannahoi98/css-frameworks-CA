@@ -1,112 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Create and share your travel adventures on Wanderly's New Post page. Add captivating stories, stunning photos, and inspire fellow travelers today!">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="manifest" href="/assets/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <script src="/js/script.js" defer></script>
-  <title>New Post - Wanderly</title>
-</head>
-<body class="font-body bg-lightBackground text-lightText dark:bg-darkElements min-h-screen flex flex-col">
-  <header class="bg-lightHeaderFooter dark:bg-darkElements dark:text-darkText dark:border-b dark:border-darkText flex justify-between items-center p-4 lg:p-8">
-    <div>
-      <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
-    </div>
-    <div class="relative flex items-center">
-      <button id="toggle-menu" class="lg:hidden text-2xl">☰</button>
-      <nav class="hidden lg:flex flex-row space-x-6 font-heading text-xl lg:text-2xl">
-        <a href="/feed/index.html" class="hover:italic">Explore</a>
-        <a href="/profile/index.html" class="hover:italic">My Profile</a>
-        <a href="/index.html" class="hover:italic">Logout</a>
-      </nav>
-    </div>
-  </header>
-  
-  <nav id="mobile-menu" class="hidden bg-lightHeaderFooter dark:bg-darkElements w-full p-4">
-    <ul class="flex flex-col items-center space-y-4 font-heading text-xl dark:text-darkText">
-      <li><a href="/feed/index.html" class="p-2 text-center block">Explore</a></li>
-      <li><a href="/profile/index.html" class="p-2 text-center block">My Profile</a></li>
-      <li><a href="/index.html" class="p-2 text-center block">Logout</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <div class="p-6 m-8 md:p-10 md:ml-28 md:mr-28 lg:ml-52 lg:mr-52 bg-lightBackground dark:bg-white border border-darkElements shadow-lg rounded-lg">
-      <div class="border-b border-darkElements">
-        <h2 class="text-xl lg:text-2xl font-heading mb-2">New Post</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create and share your travel adventures on Wanderly's New Post page. Add captivating stories, stunning photos, and inspire fellow travelers today!"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Molle:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/script.js" defer></script>
+    <title>New Post - Wanderly</title>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-lightBackground font-body text-lightText dark:bg-darkElements"
+  >
+    <header
+      class="flex items-center justify-between bg-lightHeaderFooter p-4 dark:border-b dark:border-darkText dark:bg-darkElements dark:text-darkText lg:p-8"
+    >
+      <div>
+        <h1 class="font-display text-2xl lg:text-4xl">Wanderly</h1>
       </div>
-      <form action="/feed/index.html" class="mt-8 mb-8">
-        <div class="mb-8">
-          <label for="image">Image URL</label>
-          <input 
-            type="url" 
-            name="image" 
-            id="image"
-            class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md focus:border-2"
-            required>
-        </div>
+      <div class="relative flex items-center">
+        <button id="toggle-menu" class="text-2xl lg:hidden">☰</button>
+        <nav
+          class="hidden flex-row space-x-6 font-heading text-xl lg:flex lg:text-2xl"
+        >
+          <a href="/feed/index.html" class="hover:italic">Explore</a>
+          <a href="/profile/index.html" class="hover:italic">My Profile</a>
+          <a href="/index.html" class="hover:italic">Logout</a>
+        </nav>
+      </div>
+    </header>
 
-        <div class="mb-8">
-          <label for="image-alt-text">Image Alt Text</label>
-          <input 
-            type="text"
-            name="image-alt-text"
-            id="image-alt-text"
-            class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md focus:border-2"
-            required>
-        </div>
+    <nav
+      id="mobile-menu"
+      class="hidden w-full bg-lightHeaderFooter p-4 dark:bg-darkElements"
+    >
+      <ul
+        class="flex flex-col items-center space-y-4 font-heading text-xl dark:text-darkText"
+      >
+        <li>
+          <a href="/feed/index.html" class="block p-2 text-center">Explore</a>
+        </li>
+        <li>
+          <a href="/profile/index.html" class="block p-2 text-center"
+            >My Profile</a
+          >
+        </li>
+        <li><a href="/index.html" class="block p-2 text-center">Logout</a></li>
+      </ul>
+    </nav>
 
-        <div class="mb-8">
-          <label for="description">Post Description</label>
-          <input 
-            type="text" 
-            name="description" 
-            id="description"
-            class="w-full p-2 mt-1 border border-darkElements rounded-md shadow-md focus:border-2" 
-            required>
+    <main>
+      <div
+        class="mx-4 my-8 max-w-[36rem] rounded-lg border border-darkElements bg-lightBackground px-4 py-6 shadow-lg dark:bg-white sm:mx-6 sm:px-6 md:mx-auto md:my-10 md:px-10 md:py-10 lg:my-12"
+      >
+        <div class="border-b border-darkElements">
+          <h2 class="mb-2 font-heading text-xl lg:text-2xl">New Post</h2>
         </div>
+        <form action="/feed/index.html" class="mb-8 mt-8">
+          <div class="mb-8">
+            <label for="image">Image URL</label>
+            <input
+              type="url"
+              name="image"
+              id="image"
+              class="mt-1 w-full rounded-md border border-darkElements p-2 shadow-md focus:border-2"
+              required
+            />
+          </div>
 
-        <div class="mb-8">
-          <select name="sort" id="sort" class="w-full p-2 border border-darkElements rounded-md shadow-md">
-            <option value="#" selected disabled>Choose Continent</option>
-            <option value="Africa">Africa</option>
-            <option value="Asia">Asia</option>
-            <option value="Australia">Australia</option>
-            <option value="Europe">Europe</option>
-            <option value="North America">North America</option>
-            <option value="South America">South America</option>
-          </select>
-        </div>
+          <div class="mb-8">
+            <label for="image-alt-text">Image Alt Text</label>
+            <input
+              type="text"
+              name="image-alt-text"
+              id="image-alt-text"
+              class="mt-1 w-full rounded-md border border-darkElements p-2 shadow-md focus:border-2"
+              required
+            />
+          </div>
 
-        <div class="flex justify-center mt-8">
-          <button id="login-link" class="font-display bg-lightHeaderFooter border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2">Publish Post</button>
-        </div>
-      </form>
-    </div>
-  </main>
+          <div class="mb-8">
+            <label for="description">Post Description</label>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              class="mt-1 w-full rounded-md border border-darkElements p-2 shadow-md focus:border-2"
+              required
+            />
+          </div>
 
-  <footer class="bg-lightHeaderFooter dark:bg-darkElements mt-auto dark:border-t dark:border-darkText">
-    <div class="flex justify-center items-center pt-4">
-      <button id="toggle-theme" class="font-display bg-lightBackground border border-darkElements rounded-md shadow-md pl-4 pr-4 pb-1 pt-1 text-xl hover:border-2 dark:hover:bg-lightHeaderFooter">Change Mode</button>
-    </div>
-  
-    <div class="font-heading text-lg">
-      <nav class="flex flex-col  items-center py-4 space-y-4 dark:text-darkText">
-        <a href="#" class="hover:italic">About Wanderly</a>
-        <a href="#" class="hover:italic">Terms and Conditions</a>
-        <a href="#" class="hover:italic">Privacy Policy</a>
-      </nav>
-    </div>
-  </footer>
-</body>
+          <div class="mb-8">
+            <select
+              name="sort"
+              id="sort"
+              class="w-full rounded-md border border-darkElements p-2 shadow-md"
+            >
+              <option value="#" selected disabled>Choose Continent</option>
+              <option value="Africa">Africa</option>
+              <option value="Asia">Asia</option>
+              <option value="Australia">Australia</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+            </select>
+          </div>
+
+          <div class="mt-8 flex justify-center">
+            <button
+              class="rounded-md border border-darkElements bg-lightHeaderFooter px-4 py-1 font-display text-xl shadow-md hover:shadow-lg hover:brightness-95"
+            >
+              Publish Post
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="mt-auto bg-lightHeaderFooter dark:border-t dark:border-darkText dark:bg-darkElements"
+    >
+      <div class="flex items-center justify-center pt-4">
+        <button
+          id="toggle-theme"
+          class="rounded-md border border-darkElements bg-lightBackground px-4 py-1 font-display text-xl shadow-md hover:shadow-lg hover:brightness-95"
+        >
+          Change Mode
+        </button>
+      </div>
+
+      <div class="font-heading text-lg">
+        <nav
+          class="flex flex-col items-center space-y-4 py-4 dark:text-darkText"
+        >
+          <a href="#" class="hover:italic">About Wanderly</a>
+          <a href="#" class="hover:italic">Terms and Conditions</a>
+          <a href="#" class="hover:italic">Privacy Policy</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
