@@ -1,4 +1,4 @@
-### Wanderly: A Social Media App for Travelers 🌏
+# Wanderly: A Social Media App for Travelers 🌏
 <img width="1469" height="829" alt="image" src="https://github.com/user-attachments/assets/5c01f98b-1a58-4174-839d-8c4a6a3bdaa7" />
 Welcome to Wanderly, a social media platform designed for travelers to share their adventures, connect with fellow wanderers, and inspire the community with their experiences. This project was created as part of the CSS Frameworks Course Assignment for the Front-End Development program at Noroff School of Technology and Digital Media.
 
@@ -29,29 +29,29 @@ Wanderly is a small social media UI prototype for travelers. The project’s pur
 - Node.js
 - A static server (ex. Live server extension in VS Code)
 
-# Installing
-# 1) Clone the repo
-git clone <YOUR-REPO-URL>
-cd <YOUR-REPO-FOLDER>
+### Installing 
+1) Clone the repo
+git clone https://github.com/hannahoi98/css-frameworks-CA.git
+cd css-frameworks-CA
 
-# 2) Install dependencies
+2) Install dependencies
 npm install
 
-# Running (development)
-# Start Tailwind (watch mode) / dev tooling
+### Running (development)
+Start Tailwind (watch mode) / dev tooling
 npm run dev
 
 Open index.html with live server (or any static server)
 
-# Building
+### Building (optional)
 npm run build
 
-## Contributing
+## Contributing ⚡️
 1. Fork the repo
 2. Create a feature branch: git checkout -b feat/your-branch
 3. Commit with clear messages
 4. Open a Pull Request
 
-## Contact
+## Contact ✉️
 E-mail: hannahoeidahl@gmail.com
 LinkedIn: www.linkedin.com/in/hanna-høidahl-94b5b316b
