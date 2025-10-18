@@ -31,20 +31,19 @@ Prerequisites
 
 ### Installing 
 1) Clone the repo
-git clone https://github.com/hannahoi98/css-frameworks-CA.git
-cd css-frameworks-CA
+- git clone https://github.com/hannahoi98/css-frameworks-CA.git
+- cd css-frameworks-CA
 
 2) Install dependencies
-npm install
+- npm install
 
 ### Running (development)
-Start Tailwind (watch mode) / dev tooling
-npm run dev
+- npm run dev
 
-Open index.html with live server (or any static server)
+- Open index.html with live server (or any static server)
 
 ### Building (optional)
-npm run build
+- npm run build
 
 ## Contributing ⚡️
 1. Fork the repo
